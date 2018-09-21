@@ -26,8 +26,8 @@ import java.util.List;
  * 描述: List工具类
  */
 
-public class Lists {
-    private Lists() {
+public class ListUtil {
+    private ListUtil() {
     }
 
 
