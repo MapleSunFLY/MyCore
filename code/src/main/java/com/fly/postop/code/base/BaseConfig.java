@@ -1,4 +1,4 @@
-package com.fly.postop.mycode.textHttp;
+package com.fly.postop.code.base;
 
 /**
  * <pre>
@@ -16,11 +16,19 @@ package com.fly.postop.mycode.textHttp;
  *     ___`. | .'___
  *    (______|______)
  * </pre>
- * 包    名 : com.fly.postop.mycode.textHttp
+ * 包    名 : com.fly.postop.code.base
  * 作    者 : FLY
- * 创建时间 : 2018/9/20
- * 描述: 接收服务器返回数据
+ * 创建时间 : 2018/9/21
+ * 描述:
  */
-public class Reception {
+public interface BaseConfig {
+    /**
+     * 保存cookie
+     */
+    String COOKIE = "cookie";
 
+    /**
+     * 保存TOKEN
+     */
+    String TOKEN = "token";
 }

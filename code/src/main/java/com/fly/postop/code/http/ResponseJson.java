@@ -1,6 +1,6 @@
 package com.fly.postop.code.http;
 
-import com.fly.postop.code.utils.GsonUtil;
+import com.fly.postop.code.utils.GsonUtils;
 import com.google.gson.annotations.Expose;
 
 /**
@@ -24,7 +24,7 @@ import com.google.gson.annotations.Expose;
  * 创建时间 : 2018/9/20
  * 描述:
  */
-public class ResponseJson <T> {
+public class ResponseJson<T> {
 
     public static final int SUCCESS_CODE = 0;
 
@@ -58,10 +58,10 @@ public class ResponseJson <T> {
     public long execTime;
 
     public boolean isSuccess() {
-        return apiStatus == SUCCESS_CODE;
+        return sysStatus == SUCCESS_CODE && apiStatus == SUCCESS_CODE;
     }
 
     public String toJsonString() {
-        return GsonUtil.toJson(this);
+        return GsonUtils.toJson(this);
     }
 }

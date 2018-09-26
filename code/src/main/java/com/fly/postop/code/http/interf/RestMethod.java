@@ -1,4 +1,4 @@
-package com.fly.postop.code.http;
+package com.fly.postop.code.http.interf;
 
 /**
  * <pre>
@@ -16,11 +16,14 @@ package com.fly.postop.code.http;
  *     ___`. | .'___
  *    (______|______)
  * </pre>
- * 包    名 : com.fly.postop.code.http
+ * 包    名 : com.fly.postop.code.http.interf
  * 作    者 : FLY
- * 创建时间 : 2018/9/16
- * 描述:
+ * 创建时间 : 2018/9/26
+ * 描述: 请求方式
  */
-
-public class RxNet {
+public interface RestMethod {
+    String GET = "GET";
+    String POST = "POST";
+    String PUT = "PUT";
+    String DELETE = "DELETE";
 }

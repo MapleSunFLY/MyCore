@@ -25,7 +25,7 @@ import java.util.Date;
  * 创建时间 : 2018/9/18
  * 描述: 时间转换帮助类
  */
-public class TimeUtil {
+public class TimeUtils {
     public static final String FORMAT_YYYYMMDDHHMMSS = "yyyy-MM-dd HH:mm:ss";
     public static final String FORMAT_YYYYMMDD = "yyyy-MM-dd";
 
