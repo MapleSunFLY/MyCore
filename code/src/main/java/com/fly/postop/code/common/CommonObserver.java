@@ -1,8 +1,9 @@
-package com.fly.postop.code.base;
+package com.fly.postop.code.common;
 
 import android.text.TextUtils;
 
-import com.fly.postop.code.utils.GsonUtils;
+import com.fly.postop.code.base.BaseApplication;
+import com.fly.postop.code.base.BaseObserver;
 import com.fly.postop.code.utils.ToastUtils;
 
 import io.reactivex.disposables.Disposable;

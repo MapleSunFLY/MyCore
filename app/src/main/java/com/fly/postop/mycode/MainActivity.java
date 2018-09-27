@@ -2,21 +2,16 @@ package com.fly.postop.mycode;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
-import com.fly.postop.code.base.CommonObserver;
+import com.fly.postop.code.common.CommonObserver;
 import com.fly.postop.code.http.ResponseJson;
 import com.fly.postop.code.http.real.SimpleRetrofit;
-import com.fly.postop.code.utils.GsonUtils;
-import com.fly.postop.code.utils.LogUtils;
 import com.fly.postop.mycode.entity.PositionEntity;
 import com.google.gson.reflect.TypeToken;
 
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

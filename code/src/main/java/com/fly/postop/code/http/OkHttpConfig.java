@@ -1,6 +1,5 @@
 package com.fly.postop.code.http;
 
-import android.content.Context;
 import android.text.TextUtils;
 
 import com.fly.postop.code.base.BaseApplication;
@@ -13,7 +12,6 @@ import com.fly.postop.code.http.interceptor.RxHttpLogger;
 
 import java.io.File;
 import java.io.InputStream;
-import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 

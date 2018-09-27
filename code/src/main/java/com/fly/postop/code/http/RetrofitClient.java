@@ -4,9 +4,7 @@ import android.support.multidex.BuildConfig;
 
 import com.fly.postop.code.R;
 import com.fly.postop.code.base.BaseApplication;
-import com.fly.postop.code.http.cookie.store.SPCookieStore;
 import com.fly.postop.code.http.gson.GsonAdapter;
-import com.fly.postop.code.http.sign.HttpSignHeader;
 
 import okhttp3.OkHttpClient;
 import retrofit2.Retrofit;

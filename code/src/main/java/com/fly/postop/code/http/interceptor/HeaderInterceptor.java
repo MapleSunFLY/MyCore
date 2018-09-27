@@ -1,9 +1,5 @@
 package com.fly.postop.code.http.interceptor;
 
-import android.util.Log;
-
-import com.fly.postop.code.utils.GsonUtils;
-
 import java.io.IOException;
 import java.util.Map;
 import java.util.TreeMap;

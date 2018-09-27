@@ -3,16 +3,13 @@ package com.fly.postop.code.http.real;
 import android.support.v4.util.ArrayMap;
 import android.text.TextUtils;
 
-import com.fly.postop.code.base.BaseConfig;
-import com.fly.postop.code.base.CommonObserver;
+import com.fly.postop.code.common.CommonObserver;
 import com.fly.postop.code.http.GlobalRxHttp;
 import com.fly.postop.code.http.ResponseJson;
 import com.fly.postop.code.http.interceptor.Transformer;
 import com.fly.postop.code.http.interf.ApiService;
 import com.fly.postop.code.http.interf.IResultHelper;
 import com.fly.postop.code.http.interf.RestMethod;
-import com.fly.postop.code.http.sign.HttpSignHeader;
-import com.fly.postop.code.utils.SPUtils;
 
 import java.lang.reflect.Type;
 import java.util.Map;

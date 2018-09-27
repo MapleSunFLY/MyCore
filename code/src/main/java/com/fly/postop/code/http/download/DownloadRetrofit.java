@@ -2,12 +2,8 @@ package com.fly.postop.code.http.download;
 
 import com.fly.postop.code.R;
 import com.fly.postop.code.base.BaseApplication;
-import com.fly.postop.code.http.HttpUtils;
 import com.fly.postop.code.http.RetrofitClient;
 import com.fly.postop.code.http.interceptor.Transformer;
-import com.fly.postop.code.utils.ListUtils;
-
-import java.util.List;
 
 import io.reactivex.Observable;
 import okhttp3.ResponseBody;

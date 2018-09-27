@@ -4,15 +4,12 @@ import com.fly.postop.code.http.ResponseJson;
 import com.fly.postop.code.http.interf.IResultHelper;
 import com.fly.postop.code.utils.GsonUtils;
 
-import org.reactivestreams.Subscriber;
-
 import java.lang.reflect.Type;
 import java.util.logging.Logger;
 
 import io.reactivex.Observable;
 import io.reactivex.ObservableSource;
 import io.reactivex.ObservableTransformer;
-import io.reactivex.Observer;
 import io.reactivex.functions.Function;
 
 /**

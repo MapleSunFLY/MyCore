@@ -2,7 +2,6 @@ package com.fly.postop.code.utils;
 
 import android.content.Context;
 import android.graphics.Color;
-import android.os.Handler;
 import android.text.TextUtils;
 import android.view.Gravity;
 import android.view.View;
@@ -11,9 +10,6 @@ import android.widget.Toast;
 
 import com.fly.postop.code.R;
 import com.fly.postop.code.base.BaseApplication;
-
-import static android.widget.Toast.LENGTH_LONG;
-import static android.widget.Toast.LENGTH_SHORT;
 
 /**
  * <pre>

@@ -1,7 +1,5 @@
 package com.fly.postop.code.http.sign;
 
-import com.fly.postop.code.base.BaseApplication;
-
 import java.util.HashMap;
 import java.util.UUID;
 

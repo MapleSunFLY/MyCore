@@ -1,7 +1,5 @@
 package com.fly.postop.code.base;
 
-import com.fly.postop.code.http.ResponseJson;
-
 import java.util.List;
 import java.util.Map;
 

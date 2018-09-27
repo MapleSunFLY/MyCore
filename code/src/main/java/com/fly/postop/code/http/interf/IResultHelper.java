@@ -4,7 +4,6 @@ import com.fly.postop.code.http.ResponseJson;
 
 import java.lang.reflect.Type;
 
-import io.reactivex.Observable;
 import io.reactivex.ObservableTransformer;
 
 /**
