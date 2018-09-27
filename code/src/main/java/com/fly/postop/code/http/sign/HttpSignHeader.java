@@ -38,18 +38,18 @@ public class HttpSignHeader {
     private static String X_CA_NETWORK = "X-Ca-Network";
     private static String X_CA_TOKEN = "X-Ca-Token";
     private static String X_CA_APP = "X-Ca-App";
-    private static String X_CA_OS= "X-Ca-OS";
+    private static String X_CA_OS = "X-Ca-OS";
 
     public static HashMap<String, Object> getBaseHeaders() {
-        HashMap<String,Object> headers = new HashMap<>();
-        headers.put(X_CA_TIMESTAMP,String.valueOf(System.currentTimeMillis()));
+        HashMap<String, Object> headers = new HashMap<>();
+        headers.put(X_CA_TIMESTAMP, String.valueOf(System.currentTimeMillis()));
         headers.put(X_CA_NONCE, UUID.randomUUID().toString());
         return headers;
     }
 
     public static HashMap<String, Object> getSignAndTokenHeaders() {
-        HashMap<String,Object> headers = new HashMap<>();
-        headers.put(X_CA_TIMESTAMP,String.valueOf(System.currentTimeMillis()));
+        HashMap<String, Object> headers = new HashMap<>();
+        headers.put(X_CA_TIMESTAMP, String.valueOf(System.currentTimeMillis()));
         headers.put(X_CA_NONCE, UUID.randomUUID().toString());
         return headers;
     }

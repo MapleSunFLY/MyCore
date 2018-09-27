@@ -30,7 +30,7 @@ public class TimeUtils {
     public static final String FORMAT_YYYYMMDD = "yyyy-MM-dd";
 
     public static String format(long date, String formatStr) {
-        if (date == 0l){
+        if (date == 0l) {
             return "";
         }
         SimpleDateFormat format = new SimpleDateFormat(formatStr);

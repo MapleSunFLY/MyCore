@@ -44,34 +44,35 @@ import retrofit2.http.Url;
  * 描述:
  */
 public interface BaseService {
+
     @FormUrlEncoded
     @POST
-    Observable<String> doPost(@Url String url, @FieldMap Map<String, String> params, @HeaderMap Map<String,String> headers);
+    Observable<String> doPost(@Url String url, @FieldMap Map<String, String> params, @HeaderMap Map<String, String> headers);
 
     @Headers("Content-Type: application/json")
     @POST
-    Observable<String> doPost(@Url String url, @Body Object object, @HeaderMap Map<String,String> headers);
+    Observable<String> doPost(@Url String url, @Body Object object, @HeaderMap Map<String, String> headers);
 
     @GET
-    Observable<String> doGet(@Url String url, @QueryMap Map<String, String> params, @HeaderMap Map<String,String> headers);
+    Observable<String> doGet(@Url String url, @QueryMap Map<String, String> params, @HeaderMap Map<String, String> headers);
 
     @DELETE
-    Observable<String> doDelete(@Url String url, @QueryMap Map<String, String> params, @HeaderMap Map<String,String> headers);
+    Observable<String> doDelete(@Url String url, @QueryMap Map<String, String> params, @HeaderMap Map<String, String> headers);
 
     @DELETE
-    Observable<String> doDelete(@Url String url,  @Body Object object, @HeaderMap Map<String,String> headers);
+    Observable<String> doDelete(@Url String url, @Body Object object, @HeaderMap Map<String, String> headers);
 
     @PUT
-    Observable<String> doPut(@Url String url, @QueryMap Map<String, String> params, @HeaderMap Map<String,String> headers);
+    Observable<String> doPut(@Url String url, @QueryMap Map<String, String> params, @HeaderMap Map<String, String> headers);
 
     @PUT
-    Observable<String> doPut(@Url String url,  @Body Object object, @HeaderMap Map<String,String> headers);
+    Observable<String> doPut(@Url String url, @Body Object object, @HeaderMap Map<String, String> headers);
 
     @Multipart
     @POST
-    Observable<String> upload(@Url String url, @Part List<MultipartBody.Part> parts, @HeaderMap Map<String,String> headers);
+    Observable<String> upload(@Url String url, @Part List<MultipartBody.Part> parts, @HeaderMap Map<String, String> headers);
 
     @Multipart
     @POST
-    Observable<String> upload(@Url String url, @Part MultipartBody.Part part, @PartMap Map<String,String> params, @HeaderMap Map<String,String> headers);
+    Observable<String> upload(@Url String url, @Part MultipartBody.Part part, @PartMap Map<String, String> params, @HeaderMap Map<String, String> headers);
 }

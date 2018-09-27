@@ -33,7 +33,7 @@ import okhttp3.Response;
  * 创建时间 : 2018/9/21
  * 描述: 请求头里边添加cookie
  */
-public class AddCookiesInterceptor  implements Interceptor {
+public class AddCookiesInterceptor implements Interceptor {
 
     @Override
     public Response intercept(Chain chain) throws IOException {

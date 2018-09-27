@@ -39,12 +39,12 @@ public class GsonUtils {
     private static Gson gson;
 
     public static <T> ResponseJson<T> toResponseJsonDomain(String json, Class<T> clz) {
-        if(gson == null) {
+        if (gson == null) {
             gson = new Gson();
         }
 
         ParameterizedType type = type(ResponseJson.class, new Type[]{clz});
-        return (ResponseJson<T>)gson.fromJson(json, type);
+        return (ResponseJson<T>) gson.fromJson(json, type);
     }
 
     protected static ParameterizedType type(final Class raw, final Type... args) {
@@ -63,16 +63,16 @@ public class GsonUtils {
         };
     }
 
-    public static <T> T toDomain(String json,Class<T> clz){
-        if(gson==null){
+    public static <T> T toDomain(String json, Class<T> clz) {
+        if (gson == null) {
             gson = new Gson();
         }
-        T t = gson.fromJson(json,clz);
+        T t = gson.fromJson(json, clz);
         return t;
     }
 
-    public static <T> String toJson(T t){
-        if(gson==null){
+    public static <T> String toJson(T t) {
+        if (gson == null) {
             gson = new Gson();
         }
         String json = gson.toJson(t);
@@ -86,20 +86,20 @@ public class GsonUtils {
      * @return
      */
     public static <T> List<T> toList(String json, Type type) {
-        if(gson == null) {
+        if (gson == null) {
             gson = new Gson();
         }
 
-        List list = (List)gson.fromJson(json, type);
+        List list = (List) gson.fromJson(json, type);
         return list;
     }
 
     public static <T> Map<String, T> toMap(String json, Type type) {
-        if(gson == null) {
+        if (gson == null) {
             gson = new Gson();
         }
 
-        Map map = (Map)gson.fromJson(json, type);
+        Map map = (Map) gson.fromJson(json, type);
         return map;
     }
 

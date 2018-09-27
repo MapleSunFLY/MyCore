@@ -22,6 +22,7 @@ package com.fly.postop.code.http.download;
  * 描述:
  */
 public interface ProgressListener {
+
     /**
      * 载进度监听
      *

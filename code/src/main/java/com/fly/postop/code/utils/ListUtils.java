@@ -27,9 +27,6 @@ import java.util.List;
  */
 
 public class ListUtils {
-    private ListUtils() {
-    }
-
 
     public static <E> ArrayList<E> newArrayList() {
         return new ArrayList<E>();
@@ -44,12 +41,12 @@ public class ListUtils {
         return list;
     }
 
-    public static boolean isNotEmpty(List list){
-        return  (list!=null && list.size()>0);
+    public static boolean isNotEmpty(List list) {
+        return (list != null && list.size() > 0);
     }
 
-    public static boolean isEmpty(List list){
-        return  (list == null || list.size() == 0);
+    public static boolean isEmpty(List list) {
+        return (list == null || list.size() == 0);
     }
 
     public static int getLength(final List array) {
@@ -58,6 +55,7 @@ public class ListUtils {
         }
         return array.size();
     }
+
     private static int computeArrayListCapacity(int arraySize) {
 
         return saturatedCast(5L + arraySize + (arraySize / 10));

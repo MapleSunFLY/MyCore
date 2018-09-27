@@ -45,7 +45,7 @@ public class RetrofitClient {
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                 .addConverterFactory(ScalarsConverterFactory.create())
                 .addConverterFactory(GsonConverterFactory.create(GsonAdapter.buildGson()))
-                .baseUrl( BaseApplication.getAppContext().getString(R.string.http_url_head));
+                .baseUrl(BaseApplication.getAppContext().getString(R.string.http_url_head));
     }
 
 
@@ -73,7 +73,7 @@ public class RetrofitClient {
                     //.setCache(true)
                     //.setCookieType(new SPCookieStore(BaseApplication.getAppContext()))
                     .setDebug(BuildConfig.DEBUG)
-                   // .setHeaders(HttpSignHeader.getBaseHeaders())
+                    // .setHeaders(HttpSignHeader.getBaseHeaders())
                     .build();
             return mRetrofitBuilder.client(okHttpClient).build();
         } else {

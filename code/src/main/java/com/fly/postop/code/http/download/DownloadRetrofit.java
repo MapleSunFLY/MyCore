@@ -2,8 +2,12 @@ package com.fly.postop.code.http.download;
 
 import com.fly.postop.code.R;
 import com.fly.postop.code.base.BaseApplication;
+import com.fly.postop.code.http.HttpUtils;
 import com.fly.postop.code.http.RetrofitClient;
 import com.fly.postop.code.http.interceptor.Transformer;
+import com.fly.postop.code.utils.ListUtils;
+
+import java.util.List;
 
 import io.reactivex.Observable;
 import okhttp3.ResponseBody;
@@ -34,6 +38,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
  */
 public class DownloadRetrofit {
 
+    public static String DOWNLOAD_TAG = "download";
     private static DownloadRetrofit instance;
     private Retrofit mRetrofit;
 

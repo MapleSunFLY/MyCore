@@ -145,7 +145,7 @@ public class LogUtils {
         if (null == msg && null == e)
             return 0;
         if (isDebug) {
-            return Log.e(TAG +subTAG, msg + "." + e.getMessage());
+            return Log.e(TAG + subTAG, msg + "." + e.getMessage());
         } else {
             return 0;
         }
@@ -155,7 +155,7 @@ public class LogUtils {
         if (null == msg && null == e)
             return 0;
         if (isDebug) {
-            return Log.e(TAG+subTAG, msg, e);
+            return Log.e(TAG + subTAG, msg, e);
         } else {
             return 0;
         }
@@ -182,11 +182,11 @@ public class LogUtils {
                 if (!TextUtils.isEmpty(tagJson)) {
                     json = tagJson + "\n" + json;
                 }
-                Log.e(TAG+tag, "" + json);
+                Log.e(TAG + tag, "" + json);
                 return;
             } catch (Exception e) {
             }
         }
-        Log.e(TAG+tag, "" + s);
+        Log.e(TAG + tag, "" + s);
     }
 }

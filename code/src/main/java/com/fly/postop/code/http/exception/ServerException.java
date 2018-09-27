@@ -21,24 +21,27 @@ package com.fly.postop.code.http.exception;
  * 创建时间 : 2018/9/25
  * 描述: des:服务器请求异常
  */
-public class ServerException extends Exception{
+public class ServerException extends Exception {
 
     public int sysStatus;
     public int apiStatus;
     public int exceptionCode;
-    public ServerException(String msg,int sysStatus,int apiStatus){
+
+    public ServerException(String msg, int sysStatus, int apiStatus) {
         super(msg);
-        this.apiStatus =apiStatus;
-        this.sysStatus =sysStatus;
+        this.apiStatus = apiStatus;
+        this.sysStatus = sysStatus;
     }
-    public ServerException(String msg,int sysStatus,int apiStatus,int exceptionCode){
+
+    public ServerException(String msg, int sysStatus, int apiStatus, int exceptionCode) {
         super(msg);
-        this.apiStatus =apiStatus;
-        this.sysStatus =sysStatus;
-        this.exceptionCode =exceptionCode;
+        this.apiStatus = apiStatus;
+        this.sysStatus = sysStatus;
+        this.exceptionCode = exceptionCode;
     }
-    public boolean isSuccess(){
-        if(sysStatus==0&&apiStatus==0){
+
+    public boolean isSuccess() {
+        if (sysStatus == 0 && apiStatus == 0) {
             return true;
         }
         return false;

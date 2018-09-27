@@ -25,6 +25,7 @@ import com.google.gson.GsonBuilder;
  * 描述: 设置Gson信息
  */
 public class GsonAdapter {
+
     public static Gson buildGson() {
         Gson gson = new GsonBuilder()
                 .registerTypeAdapter(Integer.class, new IntegerDefault0Adapter())

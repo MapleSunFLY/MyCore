@@ -30,5 +30,5 @@ import io.reactivex.ObservableTransformer;
  */
 public interface IResultHelper {
 
-    <T> ObservableTransformer<String,ResponseJson<T>> transfomer(Type toJsonType);
+    <T> ObservableTransformer<String, ResponseJson<T>> transfomer(Type toJsonType);
 }

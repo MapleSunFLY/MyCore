@@ -34,6 +34,7 @@ import io.reactivex.schedulers.Schedulers;
  * 描述: 控制操作线程的辅助类
  */
 public class Transformer {
+
     /**
      * 无参数
      *

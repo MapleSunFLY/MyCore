@@ -45,6 +45,7 @@ import javax.net.ssl.X509TrustManager;
  * 描述:
  */
 public class SSLUtils {
+
     public static class SSLParams {
         public SSLSocketFactory sSLSocketFactory;
         public X509TrustManager trustManager;

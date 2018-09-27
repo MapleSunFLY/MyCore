@@ -35,7 +35,7 @@ import retrofit2.HttpException;
  * 创建时间 : 2018/9/21
  * 描述: 异常类型
  */
-public class ApiException extends Exception{
+public class ApiException extends Exception {
     private final int code;
     private String message;
 

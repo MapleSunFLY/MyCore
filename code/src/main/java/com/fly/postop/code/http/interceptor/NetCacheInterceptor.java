@@ -30,6 +30,7 @@ import static com.fly.postop.code.utils.NetUtils.isNetworkConnected;
  * 描述: 网络缓存
  */
 public class NetCacheInterceptor implements Interceptor {
+
     @Override
     public Response intercept(Chain chain) throws IOException {
 

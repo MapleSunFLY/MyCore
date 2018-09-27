@@ -26,7 +26,7 @@ import android.support.multidex.MultiDex;
  * 创建时间 : 2018/9/20
  * 描述: Application 基类
  */
-public class BaseApplication extends Application{
+public class BaseApplication extends Application {
 
     private static BaseApplication httpApplication;
 
@@ -38,7 +38,6 @@ public class BaseApplication extends Application{
     public void onCreate() {
         super.onCreate();
         this.httpApplication = this;
-
     }
 
     @Override

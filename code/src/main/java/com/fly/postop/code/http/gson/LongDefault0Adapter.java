@@ -18,6 +18,7 @@ import java.lang.reflect.Type;
  */
 
 public class LongDefault0Adapter implements JsonSerializer<Long>, JsonDeserializer<Long> {
+
     @Override
     public Long deserialize(JsonElement json, Type typeOfT, JsonDeserializationContext context)
             throws JsonParseException {

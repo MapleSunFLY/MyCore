@@ -61,14 +61,14 @@ public abstract class BaseObserver<T> implements Observer<T>, ISubscriber<T> {
 
     @Override
     public void onNext(@NonNull T t) {
-        LogUtils.jsonFormatterLog("FLY-Next：",GsonUtils.toJson(t));
+        LogUtils.jsonFormatterLog("FLY-Next：", GsonUtils.toJson(t));
         doOnNext(t);
     }
 
     @Override
     public void onError(@NonNull Throwable e) {
         String error = ApiException.handleException(e).getMessage();
-        LogUtils.e("FLY-Error：",error);
+        LogUtils.e("FLY-Error：", error);
         setError(error);
     }
 

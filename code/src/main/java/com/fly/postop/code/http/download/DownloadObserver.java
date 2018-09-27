@@ -38,11 +38,12 @@ import okhttp3.ResponseBody;
  */
 public abstract class DownloadObserver extends BaseDownloadObserver {
 
-    private String destFilePath;
     private String fileName;
+    private String destFilePath;
 
-    public DownloadObserver(String destFilePath ,String fileName) {
+    public DownloadObserver(String destFilePath, String fileName) {
         this.fileName = fileName;
+        this.destFilePath = destFilePath;
     }
 
 
@@ -107,7 +108,7 @@ public abstract class DownloadObserver extends BaseDownloadObserver {
                     @Override
                     public void onNext(ResponseBody responseBody) {
                         try {
-                            new DownloadManager().saveFile(responseBody, destFilePath,fileName, new ProgressListener() {
+                            new DownloadManager().saveFile(responseBody, destFilePath, fileName, new ProgressListener() {
                                 @Override
                                 public void onResponseProgress(final long bytesRead, final long contentLength, final int progress, final boolean done, final String filePath) {
                                     Observable

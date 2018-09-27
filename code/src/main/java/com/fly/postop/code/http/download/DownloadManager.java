@@ -40,9 +40,9 @@ public class DownloadManager {
      * @return 返回
      * @throws IOException
      */
-    public File saveFile(ResponseBody response,String destFilePath ,final String destFileName, ProgressListener progressListener) throws IOException {
+    public File saveFile(ResponseBody response, String destFilePath, final String destFileName, ProgressListener progressListener) throws IOException {
 
-        String destFileDir = BaseApplication.getAppContext().getExternalFilesDir(null) + File.separator+destFilePath;
+        String destFileDir = BaseApplication.getAppContext().getExternalFilesDir(null) + File.separator + destFilePath;
 
         long contentLength = response.contentLength();
         InputStream is = null;

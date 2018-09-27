@@ -18,6 +18,7 @@ import java.lang.reflect.Type;
  */
 
 public class IntegerDefault0Adapter implements JsonSerializer<Integer>, JsonDeserializer<Integer> {
+
     @Override
     public Integer deserialize(JsonElement json, Type typeOfT, JsonDeserializationContext context)
             throws JsonParseException {

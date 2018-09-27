@@ -79,8 +79,8 @@ public class OkHttpConfig {
     /**
      * 全局的请求头信息 .setHeaders(headerMaps)
      * 开启缓存策略(默认false).setCache(true)
-     *   1、在有网络的时候，先去读缓存，缓存时间到了，再去访问网络获取数据；
-     *   2、在没有网络的时候，去读缓存中的数据。
+     * 1、在有网络的时候，先去读缓存，缓存时间到了，再去访问网络获取数据；
+     * 2、在没有网络的时候，去读缓存中的数据。
      * 全局持久话cookie .setCookieType(new SPCookieStore(this))
      * 保存到内存（new MemoryCookieStore()）
      * 或者保存到本地（new SPCookieStore(this)）默认不对cookie做处理

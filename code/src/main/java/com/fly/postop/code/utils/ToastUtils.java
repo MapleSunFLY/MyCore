@@ -48,19 +48,15 @@ public class ToastUtils extends Toast {
     /**
      * Make a standard toast that just contains a text view.
      *
-     * @param context
-     *            The context to use. Usually your
-     *            {@link android.app.Application} or
-     *            {@link android.app.Activity} object.
-     * @param text
-     *            The text to show. Can be formatted text.
-     * @param duration
-     *            How long to display the message. Either {@link #LENGTH_SHORT}
-     *            or {@link #LENGTH_LONG}
-     *
+     * @param context  The context to use. Usually your
+     *                 {@link android.app.Application} or
+     *                 {@link android.app.Activity} object.
+     * @param text     The text to show. Can be formatted text.
+     * @param duration How long to display the message. Either {@link #LENGTH_SHORT}
+     *                 or {@link #LENGTH_LONG}
      */
     public static ToastUtils makeText(Context context, CharSequence text,
-                                     int duration) {
+                                      int duration) {
 
         ToastUtils result = new ToastUtils(context.getApplicationContext());
 
@@ -89,7 +85,7 @@ public class ToastUtils extends Toast {
 
     public static void showTost(Context ct, String content) {
 
-        if(ct == null){
+        if (ct == null) {
             return;
         }
 
@@ -106,7 +102,7 @@ public class ToastUtils extends Toast {
     }
 
 
-    public static void showTost( String content) {
+    public static void showTost(String content) {
         if (mToast == null) {
             mToast = ToastUtils.makeText(BaseApplication.getAppContext(), "", Toast.LENGTH_SHORT);
         }
@@ -122,7 +118,7 @@ public class ToastUtils extends Toast {
     public static void showTost(Context ct, String content, int flag) {
 
         if (mToast == null) {
-            mToast = ToastUtils.makeText(ct.getApplicationContext(), "",  Toast.LENGTH_SHORT);
+            mToast = ToastUtils.makeText(ct.getApplicationContext(), "", Toast.LENGTH_SHORT);
         }
 
         if (!TextUtils.isEmpty(content)) {
@@ -134,7 +130,7 @@ public class ToastUtils extends Toast {
 
     public static void showErrorTost(Context ct, String content) {
         if (mToast == null) {
-            mToast = ToastUtils.makeText(ct.getApplicationContext(), "",  Toast.LENGTH_SHORT);
+            mToast = ToastUtils.makeText(ct.getApplicationContext(), "", Toast.LENGTH_SHORT);
         }
 
         if (!TextUtils.isEmpty(content)) {

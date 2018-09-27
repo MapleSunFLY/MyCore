@@ -30,7 +30,7 @@ import okhttp3.Response;
  * 创建时间 : 2018/9/21
  * 描述: 接受服务器发的cookie   并保存到本地
  */
-public class ReceivedCookiesInterceptor  implements Interceptor {
+public class ReceivedCookiesInterceptor implements Interceptor {
 
     @Override
     public Response intercept(Chain chain) throws IOException {

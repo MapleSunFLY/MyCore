@@ -42,7 +42,7 @@ public class HttpUtils {
     @SuppressLint("StaticFieldLeak")
     private static HttpUtils instance;
 
-    public HttpUtils(){
+    public HttpUtils() {
 
     }
 
@@ -103,13 +103,6 @@ public class HttpUtils {
         return UploadRetrofit.uploadImages(uploadUrl, filePaths);
     }
 
-    /**
-     * 上传多张图片
-     *
-     * @param uploadUrl 地址
-     * @param filePaths 文件路径
-     * @return ResponseBody
-     */
     /**
      * 上传多张图片
      *

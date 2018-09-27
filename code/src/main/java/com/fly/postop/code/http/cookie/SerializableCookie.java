@@ -32,9 +32,10 @@ import okhttp3.Cookie;
  * 包    名 : com.fly.postop.code.http.cookie
  * 作    者 : FLY
  * 创建时间 : 2018/9/21
- * 描述:
+ * 描述: Cookie信息类
  */
 public class SerializableCookie implements Serializable {
+
     private static final long serialVersionUID = 6374381323722046732L;
 
     public static final String HOST = "host";

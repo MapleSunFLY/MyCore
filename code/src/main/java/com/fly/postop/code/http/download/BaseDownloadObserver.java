@@ -46,7 +46,7 @@ public abstract class BaseDownloadObserver implements Observer<ResponseBody> {
     }
 
     private void setError(String errorMsg) {
-        Toast.makeText(BaseApplication.getAppContext(),errorMsg,Toast.LENGTH_SHORT);
+        Toast.makeText(BaseApplication.getAppContext(), errorMsg, Toast.LENGTH_SHORT);
         doOnError(errorMsg);
     }
 }

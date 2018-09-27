@@ -53,7 +53,7 @@ public abstract class CommonObserver<T> extends BaseObserver<T> {
     @Override
     public void doOnError(String errorMsg) {
         if (!isHideToast() && !TextUtils.isEmpty(errorMsg)) {
-            ToastUtils.showErrorTost(BaseApplication.getAppContext(),errorMsg);
+            ToastUtils.showErrorTost(BaseApplication.getAppContext(), errorMsg);
         }
         onError(errorMsg);
     }

@@ -32,6 +32,7 @@ import java.util.Set;
  * 描述: SharedPreferences 工具类
  */
 public class SPUtils {
+
     public SPUtils() {
         /* cannot be instantiated */
         throw new UnsupportedOperationException("cannot be instantiated");

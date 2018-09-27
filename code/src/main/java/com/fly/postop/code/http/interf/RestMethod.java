@@ -22,6 +22,7 @@ package com.fly.postop.code.http.interf;
  * 描述: 请求方式
  */
 public interface RestMethod {
+
     String GET = "GET";
     String POST = "POST";
     String PUT = "PUT";

@@ -39,6 +39,7 @@ import java.text.DecimalFormat;
  * 描述: 常用数据转换或判断帮助类
  */
 public class CommitUtils {
+
     public static final String regularExpression = "[a-zA-Z0-9\\s]";
     public static final String regularExpressionPunctuation = "[\\p{P}+~$`^=|<>～｀＄＾＋＝｜＜＞￥×°]";
 
@@ -103,10 +104,11 @@ public class CommitUtils {
         return (int) (dipValue * scale + 0.5f);
     }
 
-    public static float sp2px( float sp) {
+    public static float sp2px(float sp) {
         final float scale = BaseApplication.getAppContext().getResources().getDisplayMetrics().scaledDensity;
         return sp * scale;
     }
+
     public static int px2dip(Context context, float pxValue) {
         final float scale = context.getResources().getDisplayMetrics().density;
         return (int) (pxValue / scale + 0.5f);
@@ -119,13 +121,15 @@ public class CommitUtils {
             return 0L;
         }
     }
+
     public static Long getLong(Long s) {
         try {
-            return (long)s;
+            return (long) s;
         } catch (Exception e) {
             return 0L;
         }
     }
+
     public static boolean getBoolean(String s) {
         try {
             return Boolean.parseBoolean(s.trim());
@@ -158,8 +162,9 @@ public class CommitUtils {
             return 0;
         }
     }
+
     public static int getInteger(Integer s) {
-        if(s==null) return 0;
+        if (s == null) return 0;
         return s;
     }
 
