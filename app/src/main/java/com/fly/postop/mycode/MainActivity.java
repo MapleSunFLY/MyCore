@@ -37,7 +37,6 @@ public class MainActivity extends BaseLiveDataActivity<MainViewModel> {
         mViewModel.getPositionList().observe(this, new Observer<ResponseJson<List<PositionEntity>>>() {
             @Override
             public void onChanged(@Nullable ResponseJson<List<PositionEntity>> listResponseJson) {
-                LogUtils.jsonFormatterLog("",listResponseJson.toJsonString());
             }
         });
     }
