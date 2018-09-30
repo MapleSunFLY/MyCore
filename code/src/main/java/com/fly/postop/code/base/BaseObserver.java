@@ -50,7 +50,7 @@ public abstract class BaseObserver<T> implements Observer<T>, ISubscriber<T> {
      * @return string
      */
     protected String setTag() {
-        return null;
+        return BaseConfig.HTTP_COMMIT_TAG;
     }
 
     @Override
@@ -69,7 +69,7 @@ public abstract class BaseObserver<T> implements Observer<T>, ISubscriber<T> {
     public void onError(@NonNull Throwable e) {
         String error = ApiException.handleException(e).getMessage();
         LogUtils.e("FLY-Error：", error);
-        setError(error);
+        doOnError(error);
     }
 
 
@@ -77,10 +77,4 @@ public abstract class BaseObserver<T> implements Observer<T>, ISubscriber<T> {
     public void onComplete() {
         doOnCompleted();
     }
-
-
-    private void setError(String errorMsg) {
-        doOnError(errorMsg);
-    }
-
 }

@@ -44,7 +44,6 @@ public class ResultHelper implements IResultHelper {
                     @Override
                     public ObservableSource<ResponseJson<T>> apply(String result) throws Exception {
                         ResponseJson<T> responseJson = GsonUtils.fromJson(result, toJsonType);
-                        Logger.getLogger(responseJson.toJsonString());
                         return Observable.just(responseJson);
                     }
                 });

@@ -10,7 +10,7 @@
         style="@style/WrapWrap"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="@dimen/dp_10"
-        android:src="@drawable/utils_toast_ic_selector"/>
+        android:src="@drawable/utils_toast_ic_selector" />
 
     <TextView
         android:id="@+id/tvContent"

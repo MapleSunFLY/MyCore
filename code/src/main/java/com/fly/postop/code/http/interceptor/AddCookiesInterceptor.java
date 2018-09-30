@@ -3,6 +3,7 @@ package com.fly.postop.code.http.interceptor;
 import android.util.Log;
 
 import com.fly.postop.code.base.BaseConfig;
+import com.fly.postop.code.utils.LogUtils;
 import com.fly.postop.code.utils.SPUtils;
 
 import java.io.IOException;
@@ -38,12 +39,12 @@ public class AddCookiesInterceptor implements Interceptor {
     @Override
     public Response intercept(Chain chain) throws IOException {
         Request.Builder builder = chain.request().newBuilder();
-        HashSet<String> preferences = (HashSet<String>) SPUtils.get(BaseConfig.COOKIE, new HashSet<String>());
+        HashSet<String> preferences = (HashSet<String>) SPUtils.get(BaseConfig.HTTP_COOKIE, new HashSet<String>());
         if (preferences != null) {
             for (String cookie : preferences) {
                 builder.addHeader("Cookie", cookie);
                 // This is done so I know which headers are being added; this interceptor is used after the normal logging of OkHttp
-                Log.v("RxHttpUtils", "Adding Header Cookie--->: " + cookie);
+                LogUtils.v("RxHttpUtils", "Adding Header Cookie--->: " + cookie);
             }
         }
         return chain.proceed(builder.build());

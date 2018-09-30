@@ -87,7 +87,7 @@ public class ApiException extends Exception {
                 || e instanceof NotSerializableException
                 || e instanceof ParseException) {
             ex = new ApiException(e, ERROR.PARSE_ERROR);
-            ex.message = "解析错误";
+            ex.message = "解析错误，非法数据";
         } else if (e instanceof IllegalStateException) {
             ex = new ApiException(e, ERROR.ILLEGAL_STATE_ERROR);
             ex.message = e.getMessage();

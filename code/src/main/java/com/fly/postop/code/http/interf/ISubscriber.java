@@ -21,14 +21,14 @@ import io.reactivex.disposables.Disposable;
  * 包    名 : com.fly.postop.code.http.interf
  * 作    者 : FLY
  * 创建时间 : 2018/9/25
- * 描述:
+ * 描述: HTTP请求回调的接口
  */
 public interface ISubscriber<T> {
 
     /**
      * doOnSubscribe 回调
      *
-     * @param d Disposable
+     * @param d
      */
     void doOnSubscribe(Disposable d);
 

@@ -22,7 +22,7 @@ import com.google.gson.annotations.Expose;
  * 包    名 : com.fly.postop.code.http
  * 作    者 : FLY
  * 创建时间 : 2018/9/20
- * 描述:
+ * 描述: 返回数据的外包装类
  */
 public class ResponseJson<T> {
 

@@ -4,6 +4,7 @@ import android.text.TextUtils;
 
 import com.fly.postop.code.base.BaseApplication;
 import com.fly.postop.code.base.BaseObserver;
+import com.fly.postop.code.http.ResponseJson;
 import com.fly.postop.code.utils.ToastUtils;
 
 import io.reactivex.disposables.Disposable;
@@ -37,7 +38,7 @@ public abstract class CommonObserver<T> extends BaseObserver<T> {
      *
      * @param errorMsg
      */
-    protected abstract void onError(String errorMsg);
+    protected abstract void onError(String errorMsg, boolean isShowErrorTost);
 
     /**
      * 成功回调
@@ -53,10 +54,12 @@ public abstract class CommonObserver<T> extends BaseObserver<T> {
 
     @Override
     public void doOnError(String errorMsg) {
+        boolean isShowErrorTost = true;
         if (!isHideToast() && !TextUtils.isEmpty(errorMsg)) {
             ToastUtils.showErrorTost(BaseApplication.getAppContext(), errorMsg);
+            isShowErrorTost = false;
         }
-        onError(errorMsg);
+        onError(errorMsg, isShowErrorTost);
     }
 
     @Override

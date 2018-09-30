@@ -34,7 +34,6 @@ import retrofit2.converter.gson.GsonConverterFactory;
  */
 public class DownloadRetrofit {
 
-    public static String DOWNLOAD_TAG = "download";
     private static DownloadRetrofit instance;
     private Retrofit mRetrofit;
 

@@ -42,7 +42,7 @@ public class ReceivedCookiesInterceptor implements Interceptor {
             for (String header : originalResponse.headers("Set-Cookie")) {
                 cookies.add(header);
             }
-            SPUtils.put(BaseConfig.COOKIE, cookies);
+            SPUtils.put(BaseConfig.HTTP_COOKIE, cookies);
         }
 
         return originalResponse;

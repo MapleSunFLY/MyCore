@@ -22,13 +22,29 @@ package com.fly.postop.code.base;
  * 描述:
  */
 public interface BaseConfig {
+
+    /**
+     * 下载TAG
+     */
+    String HTTP_COMMIT_TAG = "TagCommit";
+
+    /**
+     * 下载TAG
+     */
+    String HTTP_DOWNLOAD_TAG = "TagDownload";
+
+    /**
+     * 上传TAG
+     */
+    String HTTP_UPLOAD_TAG = "TagUpload";
+
     /**
      * 保存cookie
      */
-    String COOKIE = "cookie";
+    String HTTP_COOKIE = "cookie";
 
     /**
      * 保存TOKEN
      */
-    String TOKEN = "token";
+    String USER_TOKEN = "UserToken";
 }

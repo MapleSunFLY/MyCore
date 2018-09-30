@@ -1,11 +1,26 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/common_white_color</item>
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+        <item name="android:windowBackground">@color/common_background_color</item>
+        <item name="toolbarStyle">@style/Toolbar</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowIsTranslucent">true</item>
     </style>
 
+    <style name="Toolbar" parent="@style/Widget.AppCompat.Toolbar">
+        <item name="colorControlNormal">@color/common_666666_color</item>
+        <item name="titleTextColor">@color/common_black_color</item>
+        <item name="titleTextAppearance">@style/Toolbar.Title</item>
+    </style>
+
+    <style name="Toolbar.Title" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textColor">@color/common_black_color</item>
+        <item name="android:textSize">@dimen/dp_17</item>
+    </style>
 </resources>
