@@ -2,10 +2,10 @@ package com.fly.postop.mycode.viewmodel;
 
 import android.arch.lifecycle.MutableLiveData;
 
-import com.fly.postop.code.base.BaseViewModel;
-import com.fly.postop.code.common.CommonObserver;
-import com.fly.postop.code.http.ResponseJson;
-import com.fly.postop.code.http.real.SimpleRetrofit;
+import com.fly.postop.core.base.BaseViewModel;
+import com.fly.postop.core.common.CommonObserver;
+import com.fly.postop.core.http.ResponseJson;
+import com.fly.postop.core.http.real.SimpleRetrofit;
 import com.fly.postop.mycode.base.PathApi;
 import com.fly.postop.mycode.entity.PositionEntity;
 import com.google.gson.reflect.TypeToken;
