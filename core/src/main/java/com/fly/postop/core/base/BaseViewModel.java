@@ -41,6 +41,7 @@ public class BaseViewModel extends ViewModel {
     }
 
     protected void sendError(String e) {
+
         ToastUtils.showErrorTost(BaseApplication.getAppContext(), e);
     }
 
@@ -62,7 +63,6 @@ public class BaseViewModel extends ViewModel {
             return true;
         } else {
             sendError(r.info);
-
         }
         return false;
     }

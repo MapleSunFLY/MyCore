@@ -31,17 +31,12 @@ import io.reactivex.disposables.Disposable;
  */
 public abstract class CommonObserver<T> extends BaseObserver<T> {
 
-    @Override
-    protected boolean isHideToast() {
-        return true;
-    }
-
     /**
      * 失败回调
      *
      * @param errorMsg
      */
-    protected abstract void onError(String errorMsg, boolean isShowErrorTost);
+    protected abstract void onError(String errorMsg);
 
     /**
      * 成功回调
@@ -57,12 +52,10 @@ public abstract class CommonObserver<T> extends BaseObserver<T> {
 
     @Override
     public void doOnError(String errorMsg) {
-        boolean isShowErrorTost = true;
         if (!isHideToast() && !TextUtils.isEmpty(errorMsg)) {
             ToastUtils.showErrorTost(BaseApplication.getAppContext(), errorMsg);
-            isShowErrorTost = false;
         }
-        onError(errorMsg, isShowErrorTost);
+        onError(errorMsg);
     }
 
     @Override

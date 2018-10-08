@@ -45,8 +45,8 @@ public class MainViewModel extends BaseViewModel {
         SimpleRetrofit.<List<PositionEntity>>builder().doGet(PathApi.POSITION_LIST_URL, new CommonObserver<ResponseJson<List<PositionEntity>>>() {
 
             @Override
-            protected void onError(String errorMsg, boolean isShowErrorTost) {
-                if (isShowErrorTost) sendError(errorMsg);
+            protected void onError(String errorMsg) {
+                if (mActivity != null) mActivity.setProgressVisible(false);
             }
 
             @Override
