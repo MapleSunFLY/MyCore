@@ -7,14 +7,14 @@
     android:elevation="0dp"
     app:elevation="0dp">
 
-    <com.shangyi.postop.core.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    <com.shangyi.android.core.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:background="?attr/colorPrimary"
         app:titleTextColor="#1a1a1a">
 
-    </com.shangyi.postop.core.widget.Toolbar>
+    </com.shangyi.android.core.widget.Toolbar>
 
     <include layout="@layout/commit_line_dark" />
 </android.support.design.widget.AppBarLayout>

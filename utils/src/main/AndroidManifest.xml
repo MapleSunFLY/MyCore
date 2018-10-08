@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.shangyi.postop.utils" >
+    package="com.shangyi.android.utils" >
 
     <application
         android:allowBackup="true"
