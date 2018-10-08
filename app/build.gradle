@@ -10,6 +10,7 @@ android {
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         multiDexEnabled true
+        resValue("integer", "app_type", "1")
 
         ndk {
             abiFilters 'armeabi', 'x86'//or armeabi-v7a、arm64-v8a
@@ -19,10 +20,14 @@ android {
         debug {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            resValue("string", "http_url_head", "http://www.doclever.cn:8090/mock/5b99cbe0fa08107daa8c022d/")
+            resValue("string", "http_type", "dev")
         }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            resValue("string", "http_url_head", "http://www.doclever.cn:8090/mock/5b99cbe0fa08107daa8c022d/")
+            resValue("string", "http_type", "release")
         }
     }
 }
@@ -32,9 +37,7 @@ dependencies {
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
-
     compile 'com.jakewharton:butterknife:8.8.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
-
     implementation project(':core')
 }

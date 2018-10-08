@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     style="@style/MatchMatch"
     android:orientation="vertical"
-    tools:context="com.fly.postop.mycode.MainActivity">
+    tools:context="com.shangyi.postop.mycode.MainActivity">
 
 
     <Button
