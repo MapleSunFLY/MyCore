@@ -4,7 +4,9 @@ import android.support.multidex.BuildConfig;
 
 import com.fly.postop.core.R;
 import com.fly.postop.core.base.BaseApplication;
+import com.fly.postop.core.http.cookie.store.SPCookieStore;
 import com.fly.postop.core.http.gson.GsonAdapter;
+import com.fly.postop.core.http.sign.HttpSignHeader;
 
 import okhttp3.OkHttpClient;
 import retrofit2.Retrofit;
@@ -68,10 +70,10 @@ public class RetrofitClient {
     public Retrofit getRetrofit() {
         if (null == OkHttpConfig.getOkHttpClient()) {
             OkHttpClient okHttpClient = new OkHttpConfig.Builder()
-                    //.setCache(true)
-                    //.setCookieType(new SPCookieStore(BaseApplication.getAppContext()))
+                    .setCache(true)
+                    .setCookieType(new SPCookieStore(BaseApplication.getAppContext()))
                     .setDebug(BuildConfig.DEBUG)
-                    // .setHeaders(HttpSignHeader.getBaseHeaders())
+                    .setHeaders(HttpSignHeader.getBaseHeaders())
                     .build();
             return mRetrofitBuilder.client(okHttpClient).build();
         } else {
