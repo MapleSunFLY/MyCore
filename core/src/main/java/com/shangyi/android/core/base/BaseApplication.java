@@ -44,8 +44,7 @@ public class BaseApplication extends Application {
         super.onCreate();
         this.httpApplication = this;
         HttpUtils.getInstance().init(this).setDebug(BuildConfig.DEBUG);
-        Utils.getInstance().init(this);
-        LogUtils.setIsDebug(BuildConfig.DEBUG);
+        Utils.getInstance().init(this).setIsDebug(BuildConfig.DEBUG);
     }
 
     @Override

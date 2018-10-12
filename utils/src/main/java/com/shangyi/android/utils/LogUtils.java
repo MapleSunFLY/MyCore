@@ -31,11 +31,7 @@ import com.google.gson.JsonParser;
  */
 public class LogUtils {
 
-    protected static boolean isDebug = BuildConfig.DEBUG;
-
-    public static void setIsDebug(boolean isDebug) {
-        LogUtils.isDebug = isDebug;
-    }
+    protected static boolean isDebug = Utils.getInstance().getIsDebug();
 
     private static final String TAG = "Postop-";
 

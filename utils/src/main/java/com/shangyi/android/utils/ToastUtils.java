@@ -97,7 +97,7 @@ public class ToastUtils extends Toast {
 
     public static void showTost(String content) {
         if (mToast == null) {
-            mToast = ToastUtils.makeText(Utils.getContext(), "", Toast.LENGTH_SHORT);
+            mToast = ToastUtils.makeText(Utils.getInstance().getContext(), "", Toast.LENGTH_SHORT);
         }
 
         if (!TextUtils.isEmpty(content)) {

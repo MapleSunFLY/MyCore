@@ -35,7 +35,7 @@ import android.support.v7.content.res.AppCompatResources;
 public class DrawableUtils {
 
     private static Context getContent() {
-        return Utils.getContext();
+        return Utils.getInstance().getContext();
     }
 
     static final int[] CHECKED_STATE_SET = new int[]{android.R.attr.state_checked};

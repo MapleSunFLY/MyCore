@@ -62,12 +62,12 @@ public class ViewUtils {
     }
 
     public static int dip2px(float dipValue) {
-        final float scale = Utils.getContext().getResources().getDisplayMetrics().density;
+        final float scale =Utils.getInstance().getContext().getResources().getDisplayMetrics().density;
         return (int) (dipValue * scale + 0.5f);
     }
 
     public static float sp2px(float sp) {
-        final float scale = Utils.getContext().getResources().getDisplayMetrics().scaledDensity;
+        final float scale = Utils.getInstance().getContext().getResources().getDisplayMetrics().scaledDensity;
         return sp * scale;
     }
 

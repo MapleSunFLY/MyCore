@@ -54,7 +54,7 @@ public class BaseActivity extends AppCompatActivity {
         AppCompatDelegate.setCompatVectorFromResourcesEnabled(true);
     }
 
-    private ViewGroup rootView;
+    protected ViewGroup rootView;
     protected View mProgressView;
 
     protected AppBarLayout mAppBarLayout;

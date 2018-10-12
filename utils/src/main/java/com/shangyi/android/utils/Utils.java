@@ -23,13 +23,14 @@ import android.content.Context;
  * 包    名 : com.fly.postop.utils
  * 作    者 : FLY
  * 创建时间 : 2018/10/8
- * 描述:
+ * 描述: 公共初始化类
  */
 public class Utils {
     @SuppressLint("StaticFieldLeak")
     private static Utils instance;
     @SuppressLint("StaticFieldLeak")
-    private static Application context;
+    private  Application context;
+    private  boolean isDebug;
 
     public static Utils getInstance() {
         if (instance == null) {
@@ -46,7 +47,7 @@ public class Utils {
     /**
      * 获取全局上下文
      */
-    public static Context getContext() {
+    public  Context getContext() {
         checkInitialize();
         return context;
     }
@@ -61,10 +62,18 @@ public class Utils {
         return this;
     }
 
+    public  void setIsDebug(boolean debug) {
+        isDebug = debug;
+    }
+
+    public  boolean getIsDebug(){
+        return isDebug;
+    }
+
     /**
      * 检测是否调用初始化方法
      */
-    private static void checkInitialize() {
+    private  void checkInitialize() {
         if (context == null) {
             throw new ExceptionInInitializerError("请先在全局Application中调用 RxHttpUtils.getInstance().init(this) 初始化！");
         }

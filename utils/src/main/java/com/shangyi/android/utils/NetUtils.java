@@ -61,7 +61,7 @@ public class NetUtils {
      * @return 返回值
      */
     public static boolean isNetworkConnected() {
-        Context context = Utils.getContext();
+        Context context = Utils.getInstance().getContext();
         if (context != null) {
             try {
                 ConnectivityManager mConnectivityManager = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
